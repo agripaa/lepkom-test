@@ -1,0 +1,102 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view2">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+
+    <div class="card">
+      <!-- <div class="circle">2</div> -->
+      <img src="img/gambar1.jpg" alt="gambar1" style="width:5%;">
+      <h1>View Two</h1>
+      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
+      <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
+      <h1>Silakan mengerjakan soal praktik Golang for Beginner.</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>ID</th>
+            <th>Nama Pemesan</th>
+            <th>Tiket Pesanan</th>
+            <th>Harga</th>
+            <th>Tanggal Diakses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>1114324155</td>
+            <td>Rio</td>
+            <td>NEXT.JS 14 Next Level</td>
+            <td>IDR 1.000.000</td>
+            <td>August 1st 2024 08:00PM</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1114324156</td>
+            <td>Muhammad Farid M</td>
+            <td>C# for Beginner</td>
+            <td>IDR 1.200.000</td>
+            <td>August 2nd 2024 08:00PM</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>1114324157</td>
+            <td>Ahsan Firdaus</td>
+            <td>NodeJS for Industry</td>
+            <td>IDR 820.000</td>
+            <td>August 3rd 2024 09:00PM</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>1114324158</td>
+            <td>Devi Mikael Empi</td>
+            <td>C# for Intermediate</td>
+            <td>IDR 1.800.000</td>
+            <td>August 4th 2024 10:00PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </template>
+
+  <script>
+    class MyView2 extends Polymer.Element {
+      static get is() { return 'my-view2'; }
+    }
+
+    window.customElements.define(MyView2.is, MyView2);
+  </script>
+</dom-module>
